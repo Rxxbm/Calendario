@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#dis div{
+    display: inline-block;
+    width: 13%;
+    height: 40px;
+    margin-left: 8px;
+    text-align: center;
+    vertical-align: 24px;
+    background-color: white;
+}
+#dis div:hover{
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+#dis{
+    background-color: white;
+    color: black;
+}
+div{
+    display: inline-block;
+    background-color: aquamarine;
+    width: 13%;
+    height: 40px;
+    margin-left: 8px;
+    text-align: center;
+    vertical-align: 24px;
+}
+div:hover{
+    background-color: black;
+    color: aquamarine;
+    cursor: pointer;
+}
+.esp{
+    background-color: black;
+    color: black;
+}
+.esp:hover{
+    background-color: black;
+    color: black;
+    cursor: default;
+}
+section{
+    max-width: 50%;
+    margin: auto;
+    background-color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
