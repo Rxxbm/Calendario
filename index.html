@@ -9,6 +9,8 @@
 </head>
 <body>
     <h2 style="text-align: center; padding: 40px;text-transform: uppercase;">Calendario</h2>
+    
+    <h3 style="text-align: center;"></h3>
     <section id="dis">
         <div>Domingo</div><div>Segunda</div><div>Terça</div><div>Quarta</div><div>Quinta</div><div>Sexta</div><div>Sábado</div>
     </section>
@@ -28,7 +30,6 @@ function _numDias(){
 
 var date = new Date();
 var primeiroDia = new Date(date.getFullYear(), date.getMonth(), 1);
-alert(primeiroDia.getDay())
 for(var j=0; j<=primeiroDia.getDay()-1; j++){
     var divv2 = document.createElement('div');
     divv2.classList.add('esp')
@@ -42,7 +43,9 @@ for(var i=1; i<=_numDias(); i++){
         prompt('Digite o horário para ser marcado com o Henrique :)')
     })
 }
-
+var nmes = date.getMonth()
+var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+document.getElementsByTagName('h3')[0].innerHTML = meses[nmes]
 </script>
 </body>
 </html>
