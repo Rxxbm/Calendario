@@ -26,10 +26,10 @@ function _numDias(){
   return numDias;
 }
 
-    var date = new Date();
-    var primeiroDia = new Date(date.getFullYear(), date.getMonth(), 1);
-    alert("ddd")
-    for(var i=0; i<=primeiroDia; i++){
+var date = new Date();
+var primeiroDia = new Date(date.getFullYear(), date.getMonth(), 1);
+alert(primeiroDia.getDay())
+for(var j=0; j<=primeiroDia.getDay()-1; j++){
     var divv2 = document.createElement('div');
     divv2.classList.add('esp')
     document.getElementsByTagName('section')[1].appendChild(divv2)
