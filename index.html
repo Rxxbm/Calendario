@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 style="text-align: center; padding: 40px;text-transform: uppercase;">Calendario</h2>
-    
+    <br><br>
     <h3 style="text-align: center;"></h3>
     <section id="dis">
         <div>Domingo</div><div>Segunda</div><div>Terça</div><div>Quarta</div><div>Quinta</div><div>Sexta</div><div>Sábado</div>
     </section>
-    <section>
+    <section class="coisas">
 
     </section>
 <script>
@@ -33,17 +32,19 @@ var primeiroDia = new Date(date.getFullYear(), date.getMonth(), 1);
 for(var j=0; j<=primeiroDia.getDay()-1; j++){
     var divv2 = document.createElement('div');
     divv2.classList.add('esp')
+
     document.getElementsByTagName('section')[1].appendChild(divv2)
     }
 for(var i=1; i<=_numDias(); i++){
     var divv = document.createElement('div');
     divv.innerHTML = String(i);
+    divv.id='normal';
     document.getElementsByTagName('section')[1].appendChild(divv);
     divv.addEventListener('click', function(){
         prompt('Digite o horário para ser marcado com o Henrique :)')
     })
 }
-var nmes = date.getMonth()
+var nmes = date.getMonth()-1
 var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 document.getElementsByTagName('h3')[0].innerHTML = meses[nmes]
 </script>
