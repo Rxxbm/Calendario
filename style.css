@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
 }
+#cab{
+    color: black;  
+    max-width: 50%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(171,175,180,1) 61%);   border-radius: 5px;
+    margin: auto;
+    max-height: 10%;
+
+}
 h3{
     font-size: 40px;
     font-weight: normal;
@@ -9,16 +18,11 @@ h3{
 }
 #dis div{
     display: inline-block;
-    width: 13%;
+    width: 12.2%;
     height: 10px;
     margin-left: 8px;
     text-align: center;
     background-color: white;
-}
-#dis div:hover{
-    background-color: white;
-    color: black;
-    cursor: default;
 }
 #dis{
     background-color: white;
@@ -30,21 +34,23 @@ h3{
 .coisas div{
     display: inline-block;
     background-color: white;
-    width: 14.21%;
+    width: 13.21%;
     height: 60px;
-    margin-left: 0px;
     text-align: center;
-    vertical-align: 24px;
     vertical-align: middle;
 }
-.coisas div:hover{
-    background-color: black;
-    color: white;
+#normal{
+    background-color: white;
+    color: black;
     cursor: pointer;
+    border: 1px black solid;
+    border-style: outset;
+    border-color: whitesmoke;
 }
 .esp{
     background-color: white;
     color: white;
+    margin-right: 1.7px;
 }
 .esp:hover{
     background-color: white;
